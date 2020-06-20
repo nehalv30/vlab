@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/theory.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        
+
+      </nav>
+    <h1 class="heading">Theory:</h1>
+    <p class="routingtheory"><span class="indent">Routing</span> protocols, according to the OSI routing framework, are layer management protocols for the network layer that specify 
+        how routers communicate with each other to distribute information and data that helps them to select routes between any two
+         nodes on a computer network.  Data packets are forwarded through the networks of the internet from one router to the other
+          router until they reach their destination computer. Each router has a prior knowledge only of networks(nodes) attached to it directly.
+         A routing protocol shares this information first among it’s immediate neighbours, and then throughout the network.<br><br>
+         There Are various Algorithms used for this, some of them discussed in our project are:<br>
+         Routing is divided into two categories: </p>
+         <ol>
+             <li>Static Routing</li>
+             <li>Dynamic Routing</li>
+             <ul>
+                 <li>Routing Information Protocol (RIP) </li>
+                 <li>Open Shortest Path First (OSPF)</li>
+                 <li>Border Gateway Protocol (BGP)</li>
+
+             </ul>
+         </ol>
+    <h3>Static Routing:</h3>
+    <p class="routingtheory" ><span class="indent">Static</span> routing is a form of routing that is used when a router uses a manually-configured routing entry, rather than information that
+         gets updated dynamically(automatically). Unlike dynamic routing, static routes remain fixed and do not show any changes if the network 
+         is changed or if it is reconfigured. Static routing and dynamic routing can be found not to mutually exclusive. Both dynamic routing and
+          static routing can be used on a router to maximize routing efficiency and to provide backups in the cases that dynamic routing information 
+          fails to be automatically updated. Static routing is generally used to define an exit point (default route) from a router in situations 
+        when no other routes can be found available. Static routing can be used for small networks that require only one or two links.</p>
+    <h3>Dynamic Routing:</h3>
+    <div>
+    <img src="images/protocol.jpg">
+    <p class="dynamic">
+        Dynamic router, also called adaptive routing, is a process whereby a router can transmit data through a different 
+        route or on the one it is assigned depending on the current state of the communication circuits within the system.
+         Dynamic routing uses complex routing algorithms that do not provide high security like static routing. When the
+          network change occurs, it sends the message to the router to ensure that the routes are then recalculated for
+           sending updated routing information. In short, dynamic routing is automated and does not require 
+        information to be entered manually like static routing. Dynamic routing is usually implemented in large networks.
+    </p>
+    </div>
+    <hr style="color: steelblue; border-color: steelblue;">
+    <div>
+    <h2 style="margin-left: 0;">i) Routing information Protocol (RIP)</h2>
+        <p class="rip"> Routing Information Protocol (RIP) is an implementation of the distance vector protocol. Routing Information 
+             (RIP) is one of the oldest dynamic routing protocols which uses hop count as a routing metric to find the best path 
+             between the source and the destination network. Updates (routing information) is broadcasted, 
+            sending the entire updated table, the information is updated periodically .It works on the principle of Bellman Ford Algorithm.</p>
+    </div>
+    <div>
+        <h2 style="margin-left:20px;">ii) Open Shortest Path First(OSPF)</h2>
+            <p class="rip">Open Shortest Path First is a routing protocol for Internet Protocol networks. 
+                It works on the link state routing algorithm and falls into the group of interior gateway protocols, 
+                operating inside a single autonomous system. It works on the principle of Dijkstra's algorithm, also known
+                 as the shortest path first (SPF) algorithm . OSPF uses the flooding  technique that is, it checks all
+                possible routes between source and destination and picks the shortest route(best route).
+                </p>
+        </div>
+   
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

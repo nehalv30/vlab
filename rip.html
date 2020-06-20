@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlabs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ripstyle.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <a class="navbar-brand topic" href="index.html"><b>Routing Protocol</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="static.html">Static</a>
+            <a class="nav-item nav-link" href="rip.html">RIP</a>
+            <a class="nav-item nav-link" href="ospf.html">OSPF</a>
+            <a class="nav-item nav-link" href="">BGP</a>
+            <audio controls>
+                <source src="audio/rip.mp4" type="audio/mp4">
+              Your browser does not support the audio element.
+              </audio>
+          </div>
+        </div>
+    </nav>
+    <!-- <h1 class="title">Routing Information Protocol(RIP) </h1> -->
+
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="but">
+            <button id="tablesub" class="btn btn-light" onclick="f()">New Graph</button>
+        </div>
+        <h4 class="add">Add edge</h4>
+        <input placeholder="From" class="input1 ss"><br>
+        <input placeholder="To" class="input2 ss"><br>
+        <input placeholder="Weight" class="input3 ss"><br>
+        <button type="submit" class="btn btn-light bb" onclick="update()">Submit</button></div>
+        <div class="col-lg-6">
+    <canvas id="canvas" width="750" height="450"></canvas>
+        </div>
+        <div class="col-lg-3">
+            <button class="btn btn-light bbb" onclick="fun()">Update 1</button><br>
+            <h4 class="packet">Send Packet</h4>
+            <input placeholder="From" class="input4"><br>
+            <input placeholder="To" class="input5"><br>
+            <button class="btn btn-light bbbb" type="submit" onclick="dim()">Send Message</button>
+            </div>
+    </div>
+    <div>
+    <table>
+        
+        
+            <th colspan="3">Table of A</th>
+        
+        <tr>
+            <th>Nodes</th>
+            <th>Dist.</th>
+            <th>Next.N</th>
+        </tr>
+        <tr>
+            <td><input value="A" readonly="readonly" size="1"></td>
+            <td><input size="1" value="0" readonly="readonly" ></td>
+            <td><input size="1" value="A" readonly="readonly"></td>
+        </tr>
+        <tr>
+            <td><input value="B" readonly="readonly" size="1"></td>
+            <td><input size="1"></td>
+            <td><input size="1"></td>
+        </tr>
+        <tr>
+            <td><input value="C" readonly="readonly" size="1"></td>
+            <td><input size="1"></td>
+            <td><input size="1"></td>
+        </tr>
+        <tr>
+            <td><input value="D" readonly="readonly" size="1"></td>
+            <td><input size="1"></td>
+            <td><input size="1"></td>
+        </tr>
+        <tr>
+            <td><input value="E" readonly="readonly" size="1"></td>
+            <td><input size="1"></td>
+            <td><input size="1"></td>
+        </tr>
+    </table>
+    <table>
+        
+            <th colspan="3">Table of B</th>
+        
+        <tr>
+            <th>Nodes</th>
+            <th>Dist.</th>
+            <th>Next.N</th>
+        </tr>
+        <tr>
+            <td><input value="A" readonly="readonly" size="1"></td>
+            <td><input size="1"></td>
+            <td><input size="1"></td>
+        </tr>
+        <tr>
+            <td><input value="B" readonly="readonly" size="1"></td>
+            <td><input size="1" value="0"  readonly="readonly"></td>
+            <td><input size="1" value="B"  readonly="readonly"></td>
+        </tr>
+        <tr>
+            <td><input value="C" readonly="readonly" size="1"></td>
+            <td><input size="1"></td>
+            <td><input size="1"></td>
+        </tr>
+        <tr>
+            <td><input value="D" readonly="readonly" size="1"></td>
+            <td><input size="1"></td>
+            <td><input size="1"></td>
+        </tr>
+        <tr>
+            <td><input value="E" readonly="readonly" size="1"></td>
+            <td><input size="1"></td>
+            <td><input size="1"></td>
+        </tr>
+    </table>
+    <table>
+        
+            <th colspan="3">Table of C</th>
+        
+        <tr>
+            <th>Nodes</th>
+            <th>Dist.</th>
+            <th>Next.N</th>
+        </tr>
+        <tr>
+            <td><input value="A" readonly="readonly" size="1"></td>
+            <td><input size="1"></td>
+            <td><input size="1"></td>
+        </tr>
+        <tr>
+            <td><input value="B" readonly="readonly" size="1"></td>
+            <td><input size="1"></td>
+            <td><input size="1"></td>
+        </tr>
+        <tr>
+            <td><input value="C" readonly="readonly" size="1"></td>
+            <td><input size="1" value="0"  readonly="readonly"></td>
+            <td><input size="1" value="C"  readonly="readonly"></td>
+        </tr>
+        <tr>
+            <td><input value="D" readonly="readonly" size="1"></td>
+            <td><input size="1"></td>
+            <td><input size="1"></td>
+        </tr>
+        <tr>
+            <td><input value="E" readonly="readonly" size="1"></td>
+            <td><input size="1"></td>
+            <td><input size="1"></td>
+        </tr>
+    </table>
+    <table>
+        
+            <th colspan="3">Table of D</th>
+        
+        <tr>
+            <th>Nodes</th>
+            <th>Dist.</th>
+            <th>Next.N</th>
+        </tr>
+        <tr>
+            <td><input value="A" readonly="readonly" size="1"></td>
+            <td><input size="1"></td>
+            <td><input size="1"></td>
+        </tr>
+        <tr>
+            <td><input value="B" readonly="readonly" size="1"></td>
+            <td><input size="1"></td>
+            <td><input size="1"></td>
+        </tr>
+        <tr>
+            <td><input value="C" readonly="readonly" size="1"></td>
+            <td><input size="1"></td>
+            <td><input size="1"></td>
+        </tr>
+        <tr>
+            <td><input value="D" readonly="readonly" size="1"></td>
+            <td><input size="1" value="0"  readonly="readonly" ></td>
+            <td><input size="1"value="D"  readonly="readonly"></td>
+        </tr>
+        <tr>
+            <td><input value="E" readonly="readonly" size="1"></td>
+            <td><input size="1"></td>
+            <td><input size="1"></td>
+        </tr>
+    </table>
+    <table>
+        
+            <th colspan="3">Table of E</th>
+        
+        <tr>
+            <th>Nodes</th>
+            <th>Dist.</th>
+            <th>Next.N</th>
+        </tr>
+        <tr>
+            <td><input value="A" readonly="readonly" size="1"></td>
+            <td><input size="1"></td>
+            <td><input size="1"></td>
+        </tr>
+        <tr>
+            <td><input value="B" readonly="readonly" size="1"></td>
+            <td><input size="1"></td>
+            <td><input size="1"></td>
+        </tr>
+        <tr>
+            <td><input value="C" readonly="readonly" size="1"></td>
+            <td><input size="1"></td>
+            <td><input size="1"></td>
+        </tr>
+        <tr>
+            <td><input value="D" readonly="readonly" size="1"></td>
+            <td><input size="1"></td>
+            <td><input size="1"></td>
+        </tr>
+        <tr>
+            <td><input value="E" readonly="readonly" size="1"></td>
+            <td><input size="1" value="0"  readonly="readonly" ></td>
+            <td><input size="1" value="E"  readonly="readonly"></td>
+        </tr>
+    </table>
+    </div>
+   
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script src="js/rip.js"></script>
+
+
+</body>
+</html>

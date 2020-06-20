@@ -1,0 +1,180 @@
+th,td,tr{
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: center;
+
+
+}
+th{
+    color: #fff;
+}
+
+table{
+    border: 1px solid black;
+    display: inline-block;
+    /* margin:50px 60px; */
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+body{
+    background-color: steelblue;
+}
+canvas{
+    border: 2px solid white;
+    background-color: white;
+    
+}
+.navbar-nav{
+    padding-left: 200px;
+    margin-left:200px ;
+    margin-right: 200px;
+}
+nav{
+    margin-bottom: 30px;
+    border: 2px solid white;
+}
+.topic{
+    padding-left: 10px;
+}
+input{
+    text-align: center;
+}
+.input1{
+   
+    margin-bottom: 5px;
+    border-radius: 5px;
+}    
+.input2{
+    margin-bottom: 5px;
+    border-radius: 5px;
+
+}
+.input3{
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+}  
+.input4{
+    
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-bottom: 5px;
+
+}
+.input5{
+    border-radius: 5px;
+    margin-left: 100px;
+}
+#tablesub{
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.ss{
+    margin-left: 100px;
+}
+
+.bb{
+    margin-left: 150px;
+    border-radius: 5px;
+}
+    
+.bbb{
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.bbbb{
+    margin-left: 130px;
+}
+.add{
+    color: white;
+    padding-left: 100px;
+}
+.packet{
+    margin-left: 100px;
+    color: white;
+    margin-top: 100px;
+}
+.vv1{
+    margin-left: 100px;
+}
+.vv2{
+    margin-left: 190px;
+}
+.vv3{
+    margin-left: 200px;
+}
+.vv4{
+    margin-left: 210px;
+}
+.vv5{
+    margin-left: 190px;
+}
+
+
+@media all and (max-width:500px){
+    .bb{
+        margin-bottom: 50px;
+    }
+    .bbbb{
+        margin-bottom: 50px;
+    }
+        
+    table{
+        margin-left: 100px;     
+    }
+    .vv1{
+        margin-left: 0;
+        position: absolute;
+        left: 350px;
+        top: 1380px;
+    }
+    .vv2{
+        margin-left: 0;
+        position: absolute;
+        left: 350px;
+        top: 1650px;
+    }
+    .vv3{
+         margin-left: 0;
+        position: absolute;
+        left: 350px;
+        top: 1920px;
+    }
+    .vv4{
+        margin-left: 0;
+        position: absolute;
+        left: 350px;
+        top: 2190px;
+    }
+    .vv5{
+        margin-left: 0;
+        position: absolute;
+        left: 350px;
+        top: 2460px;
+    }
+
+            
+            
+    }
+
+    .title{
+        color: #fff;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-weight: bolder;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration: underline;
+        text-decoration-color:black;
+        text-decoration-style:double ;
+    }
+
+    audio{
+        margin-left: 400px;
+    }
+    

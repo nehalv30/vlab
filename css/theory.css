@@ -1,0 +1,96 @@
+body{
+    background-color: steelblue;
+    font-size: 25px;
+    
+    color: #fff;
+}
+
+.navbar-nav{
+    padding-left: 200px;
+    margin-left:200px ;
+    margin-right: 200px;
+}
+nav{
+    margin-bottom: 30px;
+    border: 2px solid white;
+}
+.topic{
+    text-align: center;
+    margin-left: 550px;
+    font-size: larger;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.heading{
+    margin-left: 30px;
+}
+
+.routingtheory{
+    padding: 15px;
+    line-height: 1.8;
+}
+
+.indent{
+    margin-left: 150px;
+}
+#change{
+    margin-top: 20px;
+}
+p{
+    margin-bottom: 0;
+}
+ol{
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+ul{
+    line-height: 1.8;
+}
+h3{
+    text-align: center;
+}
+img{
+   
+    width: 450px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-bottom: 60px;
+}
+
+.dynamic{
+    margin-top: 30px;
+    padding: 20px;
+    margin-left: 40px;
+    line-height: 1.8;
+
+}
+
+.rip{
+    line-height: 1.8;
+    padding: 20px;
+}
+
+@media all  and (max-width:500px){
+    .navbar-nav{
+        padding-left: 0;
+        margin-left: 0 ;
+        margin-right:  0;
+    }
+    .topic{
+        text-align: center;
+        
+        font-size: larger;
+        margin-left: 100px;
+    }
+   
+
+}
